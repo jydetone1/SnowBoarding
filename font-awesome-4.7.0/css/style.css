@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	border: none;
+	
+}
+*:before, *:after{ 
+	content: ''; 
+	display: table; 
+} 
+*:after{ 
+	clear:both; 
+}
+body{
+	position: relative;
+}
+header{
+	position: relative;
+	z-index: 100;
+}
+.logo{
+	width: 15.6%;
+	float: left;
+}
+.logo__img{
+	width: 100%;
+	display: block;
+	height: 52px;
+}
+.header-top{
+	float: left;
+	width: 84.4%;
+	background: #fffeff;
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(220,222,226,1);
+	-moz-box-shadow: 0px 10px 15px 0px rgba(220,222,226,1);
+	box-shadow: 0px 10px 15px 0px rgba(220,222,226,1);
+}
+.header__btn:before{
+	display: block;
+	content: "\f08b";
+	width: 15px;
+	height: 12px;
+	position: relative;
+	left: 50%;
+	transform:translateX(-50%);
+}
+.header__btn{
+	float: right;
+	width: 60px;
+	background: #d7ddee;
+	height: 100%;
+	height: 52px;
+	color: #808999;
+}
+.heaer-nav{
+	float: right;
+}
+.header-nav__item{
+	float: left;
+	list-style: none;
+	border-left: 1px solid #eef1f3;
+}
+.header-nav__link{
+	display: block;
+	padding: 19px 38px 19px 37px;
+	text-decoration: none;
+	color: #020002;
+	text-transform: uppercase;
+	font:12px Arial;
+}
+.header-nav__item:last-child>.header-nav__link{
+	padding: 4px 38px 3px 37px;
+	color: #245882;
+}
+.username{
+	padding-top: 5px;
+}
+.user__img{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 7px;
+}
+.sidebar{
+	position: absolute;
+	left: 0;
+	width: 15.6%;
+	background: #f2f4f8;
+	-webkit-box-shadow: 10px 0px 15px 0px rgba(217,219,223,1);
+	-moz-box-shadow: 10px 0px 15px 0px rgba(217,219,223,1);
+	box-shadow: 10px 0px 15px 0px rgba(217,219,223,1);
+	z-index: 100;
+}
+.sidebar-menu{
+	width: 100%;
+}
+.sidebar-menu__item{
+	text-align: left;
+	display: block;
+}
+.sidebar-menu__item:before{
+	display: block;
+}
+.profil:before
+.sidebar-menu__item:hover{
+	border-left: 5px solid #266a9f;
+	background: #a9b5ca;
+}
+.sidebar-menu__item:hover>.sidebar-menu__link{
+	padding-left: 45px;
+}
+.sidebar-menu__link{
+	display: inline-block;
+	padding: 10px 0;
+	list-style: none;
+	text-decoration: none;
+	color: #232528;
+	padding-left: 50px;
+	font: 12px Arial
+}
+.content{
+	border-top-left-radius: 5px;
+	background: #f2f4f8;
+	width: 84.4%;
+	position: absolute;
+	left: 15.5%;
+	height: 100px;
+}
